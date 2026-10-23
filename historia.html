@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#7d4054">
+  <title>Nuestra historia | Para Helen</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header"><nav class="nav container" aria-label="Navegación principal"><a class="brand" href="index.html" aria-label="Ir al inicio">P <span>♡</span> H</a></nav></header>
+  <main>
+    <section class="section time-section" aria-labelledby="time-title">
+      <div class="container center">
+        <a class="btn btn-outline return-home" href="index.html"><span aria-hidden="true">←</span> Volver al menú principal</a>
+        <p class="eyebrow light">Nuestra historia sigue contando</p>
+        <h1 class="page-title" id="time-title">Todo este tiempo eligiéndonos</h1>
+        <div class="counter" id="relationship-counter" aria-live="polite">
+          <div class="counter-item"><strong id="years">0</strong><span>Años</span></div>
+          <div class="counter-item"><strong id="months">0</strong><span>Meses</span></div>
+          <div class="counter-item"><strong id="days">0</strong><span>Días</span></div>
+          <div class="counter-item"><strong id="hours">0</strong><span>Horas</span></div>
+          <div class="counter-item"><strong id="minutes">0</strong><span>Minutos</span></div>
+        </div>
+        <p class="time-note">Y todavía me emocionas como al principio.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><div class="container center"><button class="footer-heart" id="footer-heart" type="button" aria-label="Corazón secreto del pie de página">♥</button><p>Hecho con amor por Pablo, exclusivamente para Helen.</p><p class="footer-small">Nuestro lugar seguro · <span id="current-year"></span></p></div></footer>
+  <div class="modal" id="comfort-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden><div class="modal-backdrop" data-close-modal></div><div class="modal-content"><button class="modal-close" type="button" data-close-modal aria-label="Cerrar ventana">×</button><div class="modal-heart" aria-hidden="true">♥</div><h2 id="modal-title">Helen, ven aquí un momento</h2><p id="modal-message">Cierra los ojos y respira conmigo. Imagina mis brazos alrededor de ti y mi voz diciéndote: estoy aquí, te amo y no tienes que pasar por esto sola. En cuanto pueda, volveré contigo.</p><button class="btn btn-primary" type="button" data-close-modal>Me quedo con este abrazo</button></div></div>
+  <div class="toast" id="secret-toast" role="status" aria-live="polite" aria-atomic="true"><span aria-hidden="true">♥</span><p id="secret-message"></p></div>
+  <script src="script.js" defer></script>
+</body>
+</html>

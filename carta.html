@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#7d4054">
+  <title>Una carta para Helen | Para Helen</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header"><nav class="nav container" aria-label="Navegación principal"><a class="brand" href="index.html" aria-label="Ir al inicio">P <span>♡</span> H</a></nav></header>
+  <main>
+    <section class="section letter-section" aria-labelledby="letter-title">
+      <div class="container">
+        <a class="btn btn-outline return-home" href="index.html"><span aria-hidden="true">←</span> Volver al menú principal</a>
+        <div class="letter-wrap">
+          <div class="letter-intro">
+            <p class="eyebrow">Lo que nunca quiero que olvides</p>
+            <h1 class="page-title" id="letter-title">Una carta para ti</h1>
+            <p>Ábrela despacio. Está escrita para esos momentos en los que necesitas escuchar mi corazón.</p>
+            <button class="btn btn-outline" id="open-letter-button" type="button" aria-expanded="false" aria-controls="letter-heart-gate letter-content">Abrir mi carta</button>
+          </div>
+          <div class="letter-heart-gate" id="letter-heart-gate" aria-labelledby="heart-instruction" hidden>
+            <p class="heart-instruction" id="heart-instruction">Presiona varias veces el corazón para abrir tu carta.</p>
+            <button class="letter-open-heart" id="letter-open-heart" type="button" aria-label="Presiona el corazón cinco veces para abrir la carta" aria-describedby="heart-instruction heart-progress">♥</button>
+            <p class="heart-progress" id="heart-progress" role="status" aria-live="polite">0 de 5 pulsaciones</p>
+          </div>
+          <article class="letter-paper" id="letter-content" hidden>
+            <p class="letter-date">Para mi niña preciosa:</p>
+            <p>Si estás leyendo esto es porque seguramente te sientes sola, quiero que sepas que esto que estoy escribiendo no es solo cuándo estés triste, sino también cuándo estés enojada, feliz o ansiosa.</p>
+            <p>Sé que he cometido muchos errores, he llegado a pensar que no merezco estar en tu vida, sin embargo tú sigues acá. Eso me hace pensar en que debo ser mejor cada día, pero no logro entender porque siempre lo arruino.</p>
+            <p>Aún así quiero que sepas que no hay mujer con la que quiera pasar el resto de mi vida más que contigo, estoy feliz hasta donde hemos llegado, y le pido a Dios en que me ayude a ser un buen hombre para tí.</p>
+            <p>Eres lo que siempre quise y necesité, eres mi complemento y mi media naranja, quiero pasar el resto de mi vida contigo y que podamos cumplir todas nuestros sueños y metas juntos.</p>
+            <p>Estoy orgulloso de la mujer que eres y de la mujer que tengo a mi lado, eres increíble, amable, fuerte, valiente, decidida y tienes una sonrisa que me encanta, amo la manera en que somos, cuándo entendemos nuestros propios chistes y la manera en la que nos apoyamos mutuamente.</p>
+            <p>Gracias por elegirme, por compartir tu vida conmigo y por hacerme sonreír como al principio. Quiero seguir construyendo recuerdos contigo, esta pagina solo es un recordatorio de lo que siento por tí, pero siempre quiero estar contigo en todo momento.</p>
+            <p class="letter-closing">Te amo más de lo que una página puede explicar.<br><strong>Con cariño, tu hermoso novio.</strong></p>
+            <button class="tiny-heart" id="letter-heart" type="button" aria-label="Pequeño corazón secreto">♥</button>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><div class="container center"><button class="footer-heart" id="footer-heart" type="button" aria-label="Corazón secreto del pie de página">♥</button><p>Hecho con amor por Pablo, exclusivamente para Helen.</p><p class="footer-small">Nuestro lugar seguro · <span id="current-year"></span></p></div></footer>
+  <div class="modal" id="comfort-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden><div class="modal-backdrop" data-close-modal></div><div class="modal-content"><button class="modal-close" type="button" data-close-modal aria-label="Cerrar ventana">×</button><div class="modal-heart" aria-hidden="true">♥</div><h2 id="modal-title">Helen, ven aquí un momento</h2><p id="modal-message">Cierra los ojos y respira conmigo. Imagina mis brazos alrededor de ti y mi voz diciéndote: estoy aquí, te amo y no tienes que pasar por esto sola. En cuanto pueda, volveré contigo.</p><button class="btn btn-primary" type="button" data-close-modal>Me quedo con este abrazo</button></div></div>
+  <div class="toast" id="secret-toast" role="status" aria-live="polite" aria-atomic="true"><span aria-hidden="true">♥</span><p id="secret-message"></p></div>
+  <script src="script.js" defer></script>
+</body>
+</html>

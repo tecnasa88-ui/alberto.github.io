@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Un rincón privado de Pablo para Helen, creado con amor.">
+  <meta name="theme-color" content="#7d4054">
+  <title>Para Helen, con amor ❤️</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero" id="inicio">
+    <nav class="nav container" aria-label="Navegación principal">
+      <a class="brand" href="index.html" aria-label="Ir al inicio">P <span>♡</span> H</a>
+      <button class="nav-comfort" id="hug-button" type="button"><span aria-hidden="true">♡</span> Necesito un abrazo de Pablo</button>
+    </nav>
+
+    <div class="hero-content container">
+      <button class="heart-seal secret-trigger" id="heart-seal" type="button" aria-label="Corazón de Pablo para Helen" title="Este corazón guarda secretos">♥</button>
+      <p class="eyebrow">Un lugar seguro, solo para ti</p>
+      <h1>Hola amorcito <span aria-hidden="true">❤️</span></h1>
+      <p class="hero-text">
+        Si estás aquí es porque te sientes sola, triste, enojada o tal vez me extrañes, pero quiero que recuerdes que te amo con todo mi corazón y que eres el regalo más grande que Dios me ha dado. Siempre estaré aquí para ti.
+      </p>
+    </div>
+  </header>
+
+  <main class="home-main">
+    <section class="section home-hub" aria-labelledby="hub-title">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Nuestro pequeño lugar</p>
+            <h2 id="hub-title">¿A dónde vamos?</h2>
+          </div>
+          <p>Elige lo que necesitas ahora. Estoy aquí en cada rincón.</p>
+        </div>
+        <nav class="destination-grid" aria-label="Páginas para Helen">
+          <a class="destination-link" href="mensajes.html"><span>01</span><strong>Un abrazo en palabras</strong><small>Mensajes para cualquier momento</small></a>
+          <a class="destination-link" href="carta.html"><span>02</span><strong>Una carta para ti</strong><small>Lo que quiero que nunca olvides</small></a>
+          <a class="destination-link" href="historia.html"><span>03</span><strong>Nuestra historia</strong><small>El tiempo que llevamos eligiéndonos</small></a>
+          <a class="destination-link" href="recuerdos.html"><span>04</span><strong>Rincón de recuerdos</strong><small>Momentos que quiero guardar contigo</small></a>
+          <a class="destination-link" href="audio.html"><span>05</span><strong>Mi voz, cerquita de ti</strong><small>Mensajes para escuchar cuando quieras</small></a>
+        </nav>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container center">
+      <button class="footer-heart" id="footer-heart" type="button" aria-label="Corazón secreto del pie de página">♥</button>
+      <p>Hecho con amor por Pablo, exclusivamente para Helen.</p>
+      <p class="footer-small">Nuestro lugar seguro · <span id="current-year"></span></p>
+    </div>
+  </footer>
+
+  <div class="modal" id="comfort-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-content">
+      <button class="modal-close" type="button" data-close-modal aria-label="Cerrar ventana">×</button>
+      <div class="modal-heart" aria-hidden="true">♥</div>
+      <h2 id="modal-title">Helen, ven aquí un momento</h2>
+      <p id="modal-message">Cierra los ojos y respira conmigo. Imagina mis brazos alrededor de ti y mi voz diciéndote: estoy aquí, te amo y no tienes que pasar por esto sola. En cuanto pueda, volveré contigo.</p>
+      <button class="btn btn-primary" type="button" data-close-modal>Me quedo con este abrazo</button>
+    </div>
+  </div>
+
+  <div class="toast" id="secret-toast" role="status" aria-live="polite" aria-atomic="true">
+    <span aria-hidden="true">♥</span>
+    <p id="secret-message"></p>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
